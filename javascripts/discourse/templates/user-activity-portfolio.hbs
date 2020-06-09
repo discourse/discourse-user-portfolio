@@ -1,0 +1,16 @@
+{{#if topicList.topics}}
+  {{#load-more class="paginated-topics-list" selector=".paginated-topics-list .topic-list tr" action=(action "loadMore")}}
+    {{basic-topic-list topicList=model
+                      showPosters=true}}
+    {{conditional-loading-spinner condition=model.loadingMore}}
+  {{/load-more}}
+{{else}}
+  <div class='empty-portfolio'>
+    <div class='empty-portfolio-message'>
+      {{{theme-i18n 'empty_portfolio'}}}
+      <a href={{category.url}}>
+        {{category.name}}
+      </a>
+    </div>
+  </div>
+{{/if}}

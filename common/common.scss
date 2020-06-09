@@ -1,0 +1,13 @@
+.empty-portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  .empty-portfolio-message {
+    margin: 20px;
+    font-size: $font-up-2;
+    max-width: 500px;
+    text-align: center;
+  }
+}

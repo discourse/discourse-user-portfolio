@@ -8,3 +8,5 @@ en:
       portfolio_thumbnail_style: Thumbnail style for portfolio page (requires discourse-topic-thumbnails to be installed and added to the active theme)
       user_card_portfolio_link: Display a portfolio link on user cards?
   portfolio: Portfolio
+  empty_portfolio: |
+     This portfolio is waiting to be filled<br/>Get started by adding topics to

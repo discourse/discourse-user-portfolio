@@ -1,21 +1,19 @@
-import UserTopicListRoute from "discourse/routes/user-topic-list";
-import UserAction from "discourse/models/user-action";
-
 const filterTags = settings.portfolio_tags.split("|").filter(val => val);
 
-export default UserTopicListRoute.extend({
-  userActionType: UserAction.TYPES.topics,
+import DiscourseRoute from "discourse/routes/discourse";
+import Category from "discourse/models/category";
 
+export default DiscourseRoute.extend({
   buildRouteInfoMetadata() {
     return {
       customThumbnailMode: settings.portfolio_thumbnail_style
     };
   },
 
-  setupController() {
+  setupController(controller) {
     this._super(...arguments);
-    this.controllerFor("user-topics-list").setProperties({
-      showPosters: true
+    controller.setProperties({
+      category: Category.findById(settings.portfolio_category)
     });
   },
 
