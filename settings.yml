@@ -1,0 +1,18 @@
+portfolio_category:
+  type: integer
+  default: 0
+portfolio_tags:
+  type: list
+  list_type: tag
+  default: ""
+portfolio_icon:
+  default: palette
+portfolio_thumbnail_style:
+  default: grid
+  type: enum
+  choices:
+    - grid
+    - masonry
+    - list
+    - none
+user_card_portfolio_link: true

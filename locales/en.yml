@@ -1,0 +1,10 @@
+en: 
+  theme_metadata: 
+    description: Add a portfolio tab to the user activity page
+    settings:
+      portfolio_category: Portfolio category ID. Set to 0 for all categories
+      portfolio_tags: Portfolio tags
+      portfolio_icon: Icon for portfolio tab and user-card-button
+      portfolio_thumbnail_style: Thumbnail style for portfolio page (requires discourse-topic-thumbnails to be installed and added to the active theme)
+      user_card_portfolio_link: Display a portfolio link on user cards?
+  portfolio: Portfolio
