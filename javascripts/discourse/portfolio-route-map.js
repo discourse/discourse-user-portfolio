@@ -1,6 +1,6 @@
 export default {
-  resource: "user.userActivity",
+  resource: "user",
   map() {
-    this.route("portfolio");
+    this.route("portfolio", { path: "activity/portfolio" });
   }
 };
