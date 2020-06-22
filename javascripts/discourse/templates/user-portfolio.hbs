@@ -1,7 +1,7 @@
 <div class="user-portfolio">
   {{#if model.topics}}
     {{#load-more class="paginated-topics-list" selector=".paginated-topics-list .topic-list tr" action=(action "loadMore")}}
-      {{basic-topic-list topicList=model
+      {{portfolio-basic-topic-list topicList=model
                         showPosters=true}}
       {{conditional-loading-spinner condition=model.loadingMore}}
     {{/load-more}}
