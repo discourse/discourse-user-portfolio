@@ -23,5 +23,5 @@ export default {
       Ember.TEMPLATES["mobile/components/portfolio-basic-topic-list"] =
         Ember.TEMPLATES["mobile/components/basic-topic-list"];
     }
-  }
+  },
 };
