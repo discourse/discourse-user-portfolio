@@ -5,7 +5,7 @@
       selector=".paginated-topics-list .topic-list tr"
       action=(action "loadMore")
     }}
-      {{portfolio-basic-topic-list topicList=model showPosters=true}}
+      {{basic-topic-list topicList=model showPosters=true}}
       {{conditional-loading-spinner condition=model.loadingMore}}
     {{/load-more}}
   {{else}}
