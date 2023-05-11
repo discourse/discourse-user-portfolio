@@ -27,7 +27,9 @@ export default DiscourseRoute.extend({
     filterParams["order"] = settings.portfolio_order;
 
     return this.store.findFiltered("topicList", {
-      filter: `topics/created-by/${this.modelFor("user").get("username_lower")}${tagQuery}`,
+      filter: `topics/created-by/${this.modelFor("user").get(
+        "username_lower"
+      )}${tagQuery}`,
       params: filterParams,
     });
   },
