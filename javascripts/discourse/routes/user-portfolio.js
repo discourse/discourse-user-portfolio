@@ -18,7 +18,7 @@ export default DiscourseRoute.extend({
   model() {
     const filterParams = {};
     const filterTags = settings.portfolio_tags.replace(/\|/g, "+");
-    let tagQuery = filterTags ? `?tags=${filterTags}+` : "";
+    const tagQuery = filterTags ? `?tags=${filterTags}+` : "";
 
     if (settings.portfolio_category > 0) {
       filterParams["category"] = settings.portfolio_category;
