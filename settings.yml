@@ -16,3 +16,14 @@ portfolio_thumbnail_style:
     - list
     - none
 user_card_portfolio_link: true
+portfolio_order:
+  default: "latest"
+  type: enum
+  choices:
+    - latest
+    - created
+portfolio_route_name: 
+  default: "portfolio"
+  type: string
+  description: |
+    name of the portfolio page in the URL, for example /u/username/activity/<strong>porfolio</strong>

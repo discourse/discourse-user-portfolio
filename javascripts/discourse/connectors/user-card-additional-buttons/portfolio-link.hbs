@@ -1,6 +1,11 @@
 {{d-button
   class="btn-default"
-  href=(concat "/u/" user.username_lower "/activity/portfolio")
+  href=(concat
+    "/u/"
+    user.username_lower
+    "/activity/"
+    (theme-setting "portfolio_route_name")
+  )
   icon=(theme-setting "portfolio_icon")
   label=(theme-prefix "portfolio")
 }}

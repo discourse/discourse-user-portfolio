@@ -1,5 +1,3 @@
-const filterTags = settings.portfolio_tags.split("|").filter((val) => val);
-
 import DiscourseRoute from "discourse/routes/discourse";
 import Category from "discourse/models/category";
 
@@ -17,20 +15,21 @@ export default DiscourseRoute.extend({
     });
   },
 
-  model: function () {
+  model() {
     const filterParams = {};
+    const filterTags = settings.portfolio_tags.replace(/\|/g, "+");
+    const tagQuery = filterTags ? `?tags=${filterTags}+` : "";
 
     if (settings.portfolio_category > 0) {
       filterParams["category"] = settings.portfolio_category;
     }
 
-    if (filterTags.length > 0) {
-      filterParams["tags"] = filterTags;
-    }
+    filterParams["order"] = settings.portfolio_order;
 
     return this.store.findFiltered("topicList", {
-      filter:
-        "topics/created-by/" + this.modelFor("user").get("username_lower"),
+      filter: `topics/created-by/${this.modelFor("user").get(
+        "username_lower"
+      )}${tagQuery}`,
       params: filterParams,
     });
   },
