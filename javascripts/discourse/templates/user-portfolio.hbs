@@ -1,4 +1,4 @@
-<div class="user-portfolio">
+<div class="user-content user-portfolio">
   {{#if model.topics}}
     {{#load-more
       class="paginated-topics-list"
@@ -12,10 +12,14 @@
     <div class="empty-portfolio">
       <div class="empty-portfolio-message">
         {{html-safe (theme-i18n "empty_portfolio")}}
-
-        <a href={{category.url}}>
-          {{category.name}}
-        </a>
+        {{#if category}}
+          <p>
+            {{html-safe (theme-i18n "empty_portfolio_link")}}
+            <a href={{category.url}}>
+              {{category.name}}
+            </a>
+          </p>
+        {{/if}}
       </div>
     </div>
   {{/if}}

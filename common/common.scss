@@ -1,9 +1,3 @@
-.user-portfolio {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
 .empty-portfolio {
   display: flex;
   flex-direction: column;
@@ -11,9 +5,9 @@
   align-items: center;
 
   .empty-portfolio-message {
-    margin: 20px;
+    margin-top: 2em;
     font-size: $font-up-2;
-    max-width: 500px;
+    max-width: 30em;
     text-align: center;
   }
 }
