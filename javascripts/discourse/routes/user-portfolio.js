@@ -17,8 +17,11 @@ export default DiscourseRoute.extend({
 
   model() {
     const filterParams = {};
-    const filterTags = settings.portfolio_tags.replace(/\|/g, "+");
-    const tagQuery = filterTags ? `?tags=${filterTags}+` : "";
+    const filterTags = settings.portfolio_tags.split("|").filter(Boolean);
+
+    if (filterTags.length > 0) {
+      filterParams["tags"] = filterTags;
+    }
 
     if (settings.portfolio_category > 0) {
       filterParams["category"] = settings.portfolio_category;
@@ -27,9 +30,7 @@ export default DiscourseRoute.extend({
     filterParams["order"] = settings.portfolio_order;
 
     return this.store.findFiltered("topicList", {
-      filter: `topics/created-by/${this.modelFor("user").get(
-        "username_lower"
-      )}${tagQuery}`,
+      filter: `topics/created-by/${this.modelFor("user").username_lower}`,
       params: filterParams,
     });
   },
