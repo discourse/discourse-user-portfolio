@@ -1,5 +1,7 @@
 {
   "name": "User Portfolio",
+  "about_url": "https://meta.discourse.org/t/user-portfolio/156678",
+  "license_url": "https://github.com/discourse/discourse-user-portfolio/blob/main/LICENSE",
   "component": true,
   "authors": "David Taylor"
 }
