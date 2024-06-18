@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 de:
+  theme_metadata:
+    description: Füge der Benutzeraktivitäts-Seite eine Portfolio-Registerkarte hinzu
+    settings:
+      portfolio_category: ID der Portfoliokategorie. Für alle Kategorien auf 0 setzen
+      portfolio_tags: Portfolio-Schlagwörter
+      portfolio_icon: Symbol für Portfolio-Registerkarte und Benutzerkarten-Schaltfläche
+      portfolio_thumbnail_style: Thumbnail-Stil für Portfolio-Seite (erfordert, dass discourse-topic-thumbnails installiert und zum aktiven Theme hinzugefügt wird)
+      user_card_portfolio_link: Einen Portfolio-Link auf Benutzerkarten anzeigen?
+  portfolio: Portfolio
+  empty_portfolio: Dieses Portfolio wartet darauf, gefüllt zu werden
+  empty_portfolio_link: Fang an, indem du Themen hinzufügst zu
