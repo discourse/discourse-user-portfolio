@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 he:
+  theme_metadata:
+    description: הוספת לשונית תיק עבודות לעמוד פעילות המשתמש
+    settings:
+      portfolio_category: מזהה קטגוריית תיק עבודות. 0 לכל הקטגוריות.
+      portfolio_tags: תגיות תיק עבודות
+      portfolio_icon: סמל ללשונית תיק העבודות ולכפתור כרטיס המשתמש
