@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 ja:
+  theme_metadata:
+    description: ユーザーアクティビティページにポートフォリオタブを追加します
+    settings:
+      portfolio_category: ポートフォリオカテゴリ ID。すべてのカテゴリの場合は 0 に設定します
+      portfolio_tags: ポートフォリオタグ
+      portfolio_icon: ポートフォリオタブと user-card-button のアイコン
+      portfolio_thumbnail_style: ポートフォリオページのサムネイルスタイル (discourse-topic-thumbnails をインストールしてアクティブなテーマに追加する必要があります)
+      user_card_portfolio_link: ユーザーカードにポートフォリオリンクを表示しますか？
+  portfolio: ポートフォリオ
+  empty_portfolio: このポートフォリオは追加待ちです
+  empty_portfolio_link: 'まずはトピックスを追加します:'

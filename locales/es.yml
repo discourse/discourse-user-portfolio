@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 es:
+  theme_metadata:
+    description: Añadir una pestaña de cartera a la página de actividad del usuario
+    settings:
+      portfolio_category: ID de categoría de la cartera. Establecer en 0 para todas las categorías
+      portfolio_tags: Etiquetas de cartera
+      portfolio_icon: Icono para la pestaña de cartera y user-card-button
+      portfolio_thumbnail_style: Estilo de miniaturas para la página de la cartera (requiere que discourse-topic-thumbnails esté instalado y añadido al tema activo)
+      user_card_portfolio_link: '¿Mostrar un enlace a la cartera en las tarjetas de usuario?'
+  portfolio: Cartera
+  empty_portfolio: Esta cartera está esperando a ser llenada
+  empty_portfolio_link: Empieza añadiendo temas a
