@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  theme_metadata:
+    description: 在用户活动页面中添加作品集标签页
+    settings:
+      portfolio_category: 作品集类别 ID。为所有类别设置为 0
+      portfolio_tags: 作品集标签
+      portfolio_icon: 作品集标签页和 user-card-button 的图标
+      portfolio_thumbnail_style: 作品集页面的缩略图样式（需要安装 discourse-topic-thumbnails 并将其添加到有效主题）
+      user_card_portfolio_link: 是否在用户卡片上显示作品集链接？
+  portfolio: 作品集
+  empty_portfolio: 此作品集正等待填写
+  empty_portfolio_link: 首先，将话题添加至

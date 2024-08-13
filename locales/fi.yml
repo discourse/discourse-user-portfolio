@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 fi:
+  theme_metadata:
+    description: Lisää portfoliovälilehti käyttäjän toiminnan sivulle
+    settings:
+      portfolio_category: Portfolion alueen tunnus. 0 tarkoittaa kaikkia alueita.
+      portfolio_tags: Portfoliotunnisteet
+      portfolio_icon: Kuvake portfoliovälilehdelle ja käyttäjäkorttipainikkeelle
+      portfolio_thumbnail_style: Portfoliosivun esikatselukuvan tyyli (edellyttää discourse-topic-thumbnailsin asentamista ja lisäämistä aktiiviseen teemaan)
+      user_card_portfolio_link: Näytetäänkö portfoliolinkki käyttäjäkorteissa?
+  portfolio: Portfolio
+  empty_portfolio: Tämä portfolio odottaa täyttämistä
+  empty_portfolio_link: Aloita lisäämällä ketjuja portfolioon

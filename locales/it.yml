@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 it:
+  theme_metadata:
+    description: Aggiungi una scheda portfolio alla pagina delle attività dell'utente
+    settings:
+      portfolio_category: ID categoria portfolio. Impostato su 0 per tutte le categorie
+      portfolio_tags: Etichetta del portfolio
+      portfolio_icon: Icona per la scheda portfolio e il pulsante della scheda utente
+      portfolio_thumbnail_style: Stile miniatura per la pagina del portfolio (richiede che discourse-topic-thumbnails sia installato e aggiunto al tema attivo)
+      user_card_portfolio_link: Visualizzare un link al portfolio sulle schede utente?
+  portfolio: Portfolio
+  empty_portfolio: Questo portfolio è in attesa di essere riempito
+  empty_portfolio_link: Inizia aggiungendo argomenti a

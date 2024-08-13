@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 fr:
+  theme_metadata:
+    description: Ajouter un onglet de portefeuille à la page d'activité de l'utilisateur
+    settings:
+      portfolio_category: ID de catégorie de portefeuille. Définir sur 0 pour toutes les catégories
+      portfolio_tags: Étiquettes de portefeuille
+      portfolio_icon: Icône pour l'onglet du portefeuille et le bouton de la carte d'utilisateur
+      portfolio_thumbnail_style: Style de vignette pour la page du portefeuille (nécessite l'installation et l'ajout de discourse-topic-thumbnails au thème actif)
+      user_card_portfolio_link: Afficher un lien de portefeuille sur les cartes des utilisateurs ?
+  portfolio: Portefeuille
+  empty_portfolio: Ce portefeuille est en attente d'être rempli
+  empty_portfolio_link: Commencez par ajouter des sujets à
