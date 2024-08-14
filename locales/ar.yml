@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 ar:
+  theme_metadata:
+    description: إضافة علامة تبويب سابقة الأعمال إلى صفحة نشاط المستخدم
+    settings:
+      portfolio_category: معرِّف فئة سابقة الأعمال. اضبطه على 0 لجميع الفئات
+      portfolio_tags: وسوم سابقة الأعمال
+      portfolio_icon: أيقونة علامة التبويب "سابقة الأعمال" وزر بطاقة المستخدم
+      portfolio_thumbnail_style: نمط الصورة المصغرة لصفحة سابقة الأعمال (يتطلب تثبيت discourse-topic-thumbnails وإضافته إلى السمة النشطة)
+      user_card_portfolio_link: هل تريد عرض رابط سابقة الأعمال على بطاقات المستخدم؟
+  portfolio: سابقة الأعمال
+  empty_portfolio: سابقة الأعمال هذه في انتظار الملء
+  empty_portfolio_link: ابدأ بإضافة الموضوعات إلى
