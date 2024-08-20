@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 nl:
+  theme_metadata:
+    description: Voeg een portfoliotabblad toe aan de gebruikersactiviteitpagina
+    settings:
+      portfolio_category: Portfoliocategorie-ID. Stel dit in op 0 voor alle categorieën
+      portfolio_tags: Portfoliotags
+      portfolio_icon: Pictogram voor portfoliotabblad en gebruikerskaartknop
+      portfolio_thumbnail_style: Miniatuurstijl voor portfoliopagina (hiervoor moet discourse-topic-thumbnails worden geïnstalleerd en toegevoegd aan het actieve thema)
+      user_card_portfolio_link: Portfoliolink weergeven op gebruikerskaarten?
+  portfolio: Portfolio
+  empty_portfolio: Deze portfolio wacht om gevuld te worden
+  empty_portfolio_link: Begin met het toevoegen van topics aan

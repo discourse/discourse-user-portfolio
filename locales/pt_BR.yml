@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 pt_BR:
+  theme_metadata:
+    description: Adicionar uma aba de portfólio à página de atividades do(a) usuário(a)
+    settings:
+      portfolio_category: O ID da categoria do portfólio. Defina como 0 para todas as categorias
+      portfolio_tags: Etiquetas de portfólio
+      portfolio_icon: Ícone para a aba de portfólio e user-card-button
+      portfolio_thumbnail_style: O estilo de miniatura para a página de portfólio (é preciso instalar e adicionar o discourse-topic-thumbnails ao tema ativo)
+      user_card_portfolio_link: Exibir link de portfólio em cartões de usuário(a)?
+  portfolio: Portfólio
+  empty_portfolio: O preenchimento deste portófio está pendente
+  empty_portfolio_link: Inicie adicionando tópicos a

@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 ru:
+  theme_metadata:
+    description: Добавляет вкладку портфолио на страницу активности пользователя
+    settings:
+      portfolio_category: Идентификатор категории портфолио. Установлено значение 0 для всех категорий
+      portfolio_tags: Теги портфолио
+      portfolio_icon: Значок для вкладки портфолио и user-card-button
+      portfolio_thumbnail_style: Стиль миниатюр для страницы портфолио (требуется установка компонента discourse-topic-thumbnails и добавление его в активную тему)
+      user_card_portfolio_link: Отображать ссылку на портфолио на карточках пользователей?
+  portfolio: Портфолио
+  empty_portfolio: Это портфолио ожидает наполнения
+  empty_portfolio_link: Начните с добавления тем в
