@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  theme_metadata:
+    description: Kullanıcı aktivitesi sayfasına bir portföy sekmesi ekleyin
+    settings:
+      portfolio_category: Portföy kategorisi kimliği. Tüm kategoriler için 0 olarak ayarlayın
+      portfolio_tags: Portföy etiketleri
+      portfolio_icon: Portföy sekmesi ve kullanıcı kartı düğmesi simgesi
+      portfolio_thumbnail_style: Portföy sayfası için küçük resim stili (discourse-topic-thumbnails'in kurulu olması ve aktif temaya eklenmesi gerekir)
+      user_card_portfolio_link: Kullanıcı kartlarında portföy bağlantısı gösterilsin mi?
+  portfolio: Portföy
+  empty_portfolio: Bu portföy doldurulmayı bekliyor
+  empty_portfolio_link: 'Şuraya konu ekleyerek başlayın:'
