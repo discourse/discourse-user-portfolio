@@ -11,3 +11,8 @@ he:
       portfolio_category: מזהה קטגוריית תיק עבודות. 0 לכל הקטגוריות.
       portfolio_tags: תגיות תיק עבודות
       portfolio_icon: סמל ללשונית תיק העבודות ולכפתור כרטיס המשתמש
+      portfolio_thumbnail_style: סגנון תמונות ממוזערות לעמוד תיק עבודות (דורש את התקנת discourse-topic-thumbnails והוספתו לערכת העיצוב הפעילה)
+      user_card_portfolio_link: להציג קישור תיק עבודות בכרטיסי המשתמשים?
+  portfolio: תיק עבודות
+  empty_portfolio: תיק העבודות הזה ממתין למילוי
+  empty_portfolio_link: אפשר להתחיל על ידי הוספת נושאים אל
