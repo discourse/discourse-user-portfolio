@@ -1,19 +1,19 @@
 import Category from "discourse/models/category";
 import DiscourseRoute from "discourse/routes/discourse";
 
-export default DiscourseRoute.extend({
+export default class UserPortfolio extends DiscourseRoute {
   buildRouteInfoMetadata() {
     return {
       customThumbnailMode: settings.portfolio_thumbnail_style,
     };
-  },
+  }
 
   setupController(controller) {
-    this._super(...arguments);
+    super.setupController(...arguments);
     controller.setProperties({
       category: Category.findById(settings.portfolio_category),
     });
-  },
+  }
 
   model() {
     const filterParams = {};
@@ -33,5 +33,5 @@ export default DiscourseRoute.extend({
       filter: `topics/created-by/${this.modelFor("user").username_lower}`,
       params: filterParams,
     });
-  },
-});
+  }
+}
