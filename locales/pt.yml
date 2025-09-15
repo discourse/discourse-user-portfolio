@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 pt:
+  theme_metadata:
+    description: Adicionar um separador de portefólio à página de atividade do utilizador
+    settings:
+      portfolio_category: Id. da categoria de portefólio. Definir para 0 para todas as categorias
+      portfolio_tags: Etiquetas de portefólio
+      portfolio_icon: Ícone para o separador de portefólio e botão do cartão do utilizador
+      portfolio_thumbnail_style: Estilo da miniatura para a página de portefólio (requer miniaturas de tópico do discourse para ser instalado e adicionado ao tema ativo)
+      user_card_portfolio_link: Exibir uma hiperligação do portefólio nos cartões do utilizador?
+  portfolio: Portefólio
+  empty_portfolio: Este portefólio está a aguardar para ser preenchido
+  empty_portfolio_link: Comece adicionando tópicos a
