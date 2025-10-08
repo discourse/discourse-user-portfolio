@@ -1,8 +1,8 @@
+import { htmlSafe } from "@ember/template";
 import RouteTemplate from "ember-route-template";
 import BasicTopicList from "discourse/components/basic-topic-list";
 import ConditionalLoadingSpinner from "discourse/components/conditional-loading-spinner";
 import LoadMore from "discourse/components/load-more";
-import htmlSafe from "discourse/helpers/html-safe";
 import { i18n } from "discourse-i18n";
 
 export default RouteTemplate(
