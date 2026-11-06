@@ -1,6 +1,7 @@
 /* eslint-disable ember/no-classic-components, ember/require-tagless-components */
 import Component from "@ember/component";
-import { concat } from "@ember/helper";
+import { action } from "@ember/object";
+import { service } from "@ember/service";
 import { classNames, tagName } from "@ember-decorators/component";
 import DButton from "discourse/components/d-button";
 
@@ -11,15 +12,20 @@ export default class PortfolioLink extends Component {
     return settings.user_card_portfolio_link;
   }
 
+  @service router;
+
+  @action
+  showPortfolio() {
+    // Read the user first: closing the card clears it from the outlet args
+    const username = this.user.username_lower;
+    this.close();
+    this.router.transitionTo("user.portfolio", username);
+  }
+
   <template>
     <DButton
       class="btn-default"
-      @href={{concat
-        "/u/"
-        this.user.username_lower
-        "/activity/"
-        settings.portfolio_route_name
-      }}
+      @action={{this.showPortfolio}}
       @icon={{settings.portfolio_icon}}
       @label={{themePrefix "portfolio"}}
     />
